@@ -1,7 +1,17 @@
+:root {
+  --violet: hsl(228, 45%, 44%);
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkDesaturatedBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightlyTransparentWhite-main: hsla(0, 0%, 100%, 0.75);
+  --slioghtlyTransparentWhite-stat: hsla(0, 0%, 100%, 0.6);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--violet);
 }
