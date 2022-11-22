@@ -19,15 +19,27 @@ body {
   line-height: 1.22;
 }
 
+.main-container {
+  color: var(--white);
+  background-color: var(--darkDesaturatedBlue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 1133px;
+}
+
+.left-container {
+}
+
+.right-container {
+  width: 100%;
+}
+
 .main-container p {
   font-size: 15px;
   line-height: 1.67;
   opacity: 0.75;
-}
-
-.main-container {
-  color: var(--white);
-  background-color: var(--darkDesaturatedBlue);
 }
 
 .attribution {
