@@ -23,23 +23,32 @@ body {
   color: var(--white);
   background-color: var(--darkDesaturatedBlue);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width: 1133px;
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
-  min-width: 1133px;
-}
-
-.left-container {
-}
-
-.right-container {
-  width: 100%;
 }
 
 .main-container p {
   font-size: 15px;
   line-height: 1.67;
   opacity: 0.75;
+}
+
+.left-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 95px;
+}
+
+.header-main {
+  max-width: 403px;
+}
+
+.header-rest {
+  justify-content: flex-start;
 }
 
 .attribution {
@@ -53,6 +62,12 @@ body {
 
 .offer {
   list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.offer li:not(:last-child) {
+  margin-right: 60px;
 }
 
 .offer h2 {
