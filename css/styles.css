@@ -13,81 +13,79 @@ body {
   background-color: var(--veryDarkBlue);
 }
 
-.center-conrainer {
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.conrainer {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.main-container h1 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.22;
-}
-
-.main-container {
+.container__main {
   color: var(--white);
   background-color: var(--darkDesaturatedBlue);
   display: flex;
   width: 1133px;
   margin-right: auto;
   margin-left: auto;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.main-container p {
+.left-section {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  padding-left: 95px;
+  max-width: 560px;
+}
+
+.left-section__main {
+  max-width: 403px;
+  margin-top: 72px;
+}
+
+.left-section__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  margin-bottom: 25px;
+}
+
+.left-section__insights {
+  color: var(--softViolet);
+}
+
+.left-section__desc {
+  max-width: 374px;
   font-size: 15px;
   line-height: 1.67;
   opacity: 0.75;
+  margin-bottom: 72px;
 }
 
-.left-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-left: 95px;
-}
-
-.header-main {
-  max-width: 403px;
-}
-
-.header-rest {
-  justify-content: flex-start;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: var(--violet);
-}
-
-.offer {
+.left-section__offer {
   list-style: none;
   display: flex;
   padding: 0;
+  gap: 60px;
 }
 
-.offer li:not(:last-child) {
-  margin-right: 60px;
-}
-
-.offer h2 {
+.left-section__offer-numbers {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.insights {
-  color: var(--softViolet);
-}
-
-.offer-elements {
+.left-section__offer-elements {
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
@@ -96,6 +94,23 @@ body {
   opacity: 0.6;
 }
 
-.offer h2:last-of-type {
-  text-transform: uppercase;
+.right-container {
+  display: block;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(171, 92, 219, 0.75),
+      rgba(171, 92, 219, 0.75)
+    ),
+    url("../images/image-header-desktop.jpg");
+  width: 540px;
+  height: 446px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution__link {
+  color: var(--violet);
 }
